@@ -1,0 +1,51 @@
+E-commerce customer data
+data set overview:
+Dataset source : Kaggle
+Total records    : (25000 rows, 13 columns)
+Column names : Customer ID, purchase Date, Product Category, Product Price, Quantity,
+                           Total Purchase Amount, Payment Method, Customer Age, Returns, 
+                           Customer Name, Age, Gender, Churn.
+Data cleaning process:
+Convert Data Type:
+The column Purchase date was stored as an object(string) type.
+Converted to datetime using pd.to_datetime(df['Purchase Date’])
+Check Missing Values:
+Check the number of missing values in each column.
+Check the  percentage of missing values in each column.
+The Returns column contained 47382(18.95%) missing values.
+Calculated the mean and filled.
+Converted the column to integer type for consistency.
+
+Exploratory data analysis EDA:
+Sales stayed mostly between 14M to 16M every month – showing stable performance.
+Some months show lower sales than usual, which could be due to seasonal reasons (like holidays or slow periods).
+A sudden drop in sales appears near mid-2023, likely because data is missing or not fully recorded.
+No clear increase or decrease over time – sales remained steady across the years.
+
+All product category have similar total sales, around 160 million each.
+Clothing and Electronics have slightly higher sales, but the difference is small.
+This indicates the company has a well- balanced product mix – no single category dominates.
+It may useful to focus on optimizing equally, rather than just one.
+
+Clothing has the highest number of items sold among all categories.
+Home, Electronics, and Books have slightly lower but similar quantities sold.
+Even though the total sales revenue is similar across categories (from the previous chart), the number of items sold varies.
+This could mean that clothing items are cheaper but sell in higher volume.
+Other Categories have higher-priced items, selling in lower quantities.
+
+Majority of customers are between 20 to 60 years old.
+Fewer customers below 20 and above 65.
+The distribution is fairly even across mid-age groups, with slight peaks in 25–35 and 45–55 ranges.
+Most buyers are working-age adults, so marketing can focus more on that age group.
+
+To Understand which gender is more engaged with the platform.
+Here Bar chart showing the number of male vs female customers.
+Nearly equal number of male and female customers.
+Slightly higher number of male customers.
+Finally, both genders are actively using the platform.
+
+
+
+
+
+
